@@ -1,0 +1,32 @@
+.footerBlock {
+    background-color: #d3ffe7;
+}
+
+.footerContainer {
+    border: 1px solid;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footerDiv {
+    border: 1px solid;
+    height: 50px;
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerYear {
+    background-color: #aab6c2;
+}
+
+.square {
+    background-color: #aab6c2;
+    width: 50px;
+}
