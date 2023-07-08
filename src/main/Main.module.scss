@@ -1,0 +1,64 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/sass/mixins";
+
+.main {
+  height: 100vh;
+  background-color: $bgColor;
+
+  .container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 772px) {
+      justify-content: center;
+    }
+
+    .greeting {
+      min-width: 300px;
+
+      .span {
+        @include text($textFontFamily, 16px, 1.8px)
+      }
+
+      .h1 {
+        margin-top: 30px;
+        @include text($titleFontFamily, 30px, 1.2px);
+        position: relative;
+        z-index: 1;
+
+        &::before {
+          content: '';
+          background: $primaryColor;
+          position: absolute;
+          width: 200px;
+          height: 13px;
+          bottom: -15px;
+          left: 30%;
+          z-index: -1;
+        }
+      }
+
+      .p {
+        margin-top: 40px;
+        @include text($textFontFamily, 27px, 1.8px)
+      }
+    }
+
+    .photo {
+      width: 300px;
+      height: 400px;
+      background-size: cover;
+      background-position: right;
+    }
+  }
+}
+
+
+
+
+

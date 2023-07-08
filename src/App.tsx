@@ -3,7 +3,7 @@ import './App.css';
 import Header from './header/Header';
 import Main from './main/Main';
 import Skills from './skills/Skills';
-import MyProjects from './myProjects/MyProjects';
+import Projects from './myProjects/Projects';
 import Contacts from './contacts/Contacts';
 import Footer from './footer/Footer';
 
@@ -13,7 +13,7 @@ function App() {
             <Header/>
             <Main/>
             <Skills/>
-            <MyProjects/>
+            <Projects/>
             <Contacts/>
             <Footer/>
         </div>
